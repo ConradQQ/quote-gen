@@ -32,9 +32,9 @@ useEffect(() => {
   
 
   return (
-    <div id='main' className='grid place-items-center h-screen w-screen text-center bg-red-500'>
+    <div id='main' className='grid place-items-center h-screen w-screen text-center'>
      {/* Quote Gen Container */}
-     <div className='flex flex-col mx-auto bg-sky-300 w-fit h-fit text-black space-y-3 p-16 rounded-3xl relative md:w-3/4 md:h-2/4 lg:w-2/4 shadow-xl shadow-black'>
+     <div className='flex flex-col mx-auto bg-[#1AD7EF] w-fit h-fit text-black space-y-3 p-16 rounded-3xl relative md:w-3/4 md:h-2/4 lg:w-2/4 shadow-xl shadow-black'>
      
       <div className='hidden md:block md:text-4xl'>
         <FaQuoteLeft />

@@ -5,11 +5,12 @@
 
 html,
 body {
+  overflow: hidden;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Roboto', 'Orbitron', 'Silkscreen', sans-serif -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -28,5 +29,6 @@ a {
   }
   body {
     background: white;
+    background: linear-gradient(#902BF1, #9C12AC);
   }
 }
