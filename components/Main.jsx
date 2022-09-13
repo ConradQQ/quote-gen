@@ -7,8 +7,8 @@ import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 const Main = () => {
 
- const [quote, setQuote] = useState(null)
- const [author, setAuthor] = useState(null)
+ const [quote, setQuote] = useState('Fortune favours the bold')
+ const [author, setAuthor] = useState('Anonymous')
 
  const fetchQuote = useCallback(() => {
   fetch('https://type.fit/api/quotes')
@@ -27,7 +27,14 @@ useEffect(() => {
   fetchQuote()
 }, [fetchQuote])
 
-    
+const checkQuoteLength = () => {
+  if (quote !== null) {
+    if (quote.length >= 100) {
+      return 'pt-10 font-[roboto] md:text-xl text-base'
+    } else return 'pt-10 font-[roboto] text-xl'
+  }
+  return 'pt-10 font-[roboto] text-xl'
+}
     
   
 
