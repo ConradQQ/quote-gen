@@ -26,28 +26,20 @@ const Main = () => {
 useEffect(() => {
   fetchQuote()
 }, [fetchQuote])
-
-const checkQuoteLength = () => {
-  if (quote !== null) {
-    if (quote.length >= 100) {
-      return 'pt-10 font-[roboto] md:text-xl text-base'
-    } else return 'pt-10 font-[roboto] text-xl'
-  }
-  return 'pt-10 font-[roboto] text-xl'
-}
-    
   
 
   return (
     <div id='main' className='grid place-items-center h-screen w-screen text-center'>
      {/* Quote Gen Container */}
-     <div className='flex flex-col mx-auto bg-[#1AD7EF] w-fit h-fit text-black shadow-xl shadow-black space-y-3 p-16 rounded-3xl relative mb-20 md:w-3/4 md:h-2/4 lg:w-2/4  '>
+     <div className='flex flex-col mx-auto bg-[#1AD7EF] w-fit h-fit text-black shadow-xl shadow-black space-y-3 p-16 rounded-3xl relative mb-20 md:mb-0 md:w-3/4 md:h-2/4 lg:w-2/4'>
      
       <div className='hidden md:block md:text-4xl'>
         <FaQuoteLeft />
       </div>
     <div className='space-y-10'>
-       <div className={quote.length >= 100 
+       <div className={quote == null 
+       ? null
+       : quote.length >= 100
        ? 'pt-10 font-[roboto] md:text-xl text-base'
        :'pt-10 font-[roboto] text-xl'}>
         <h4 className='font-bold' id="text">{`"${quote}"`}</h4>
