@@ -29,7 +29,7 @@ useEffect(() => {
   
 
   return (
-    <div id='main' className='grid place-items-center h-screen w-screen text-center'>
+    <div id='main' className='grid place-items-center h-screen w-screen text-center p-2'>
      {/* Quote Gen Container */}
      <div className='flex flex-col mx-auto bg-[#1AD7EF] w-fit h-fit text-black shadow-xl shadow-black space-y-3 p-16 rounded-3xl relative mb-20 md:mb-0 md:w-3/4 md:h-2/4 lg:w-2/4'>
      
