@@ -40,7 +40,7 @@ useEffect(() => {
        <div className={quote == null 
        ? null
        : quote.length >= 100
-       ? 'pt-10 font-[roboto] md:text-xl text-base'
+       ? 'pt-10 font-[roboto] md:text-xl text-lg'
        :'pt-10 font-[roboto] text-xl'}>
         <h4 className='font-bold' id="text">{`"${quote}"`}</h4>
       </div>
